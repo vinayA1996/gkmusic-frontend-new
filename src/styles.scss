@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #cd3030b8;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #bf83837a;
+}
+
+a {
+  text-decoration: none !important;
+}
