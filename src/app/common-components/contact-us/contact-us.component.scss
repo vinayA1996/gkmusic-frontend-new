@@ -1,7 +1,7 @@
 .form-container {
   width: 400px;
   background: linear-gradient(#212121, #212121) padding-box,
-              linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+    linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
   border: 2px solid transparent;
   padding: 32px 24px;
   font-size: 14px;
@@ -13,7 +13,6 @@
   box-sizing: border-box;
   border-radius: 16px;
   height: 100%;
-
 }
 
 .form-container button:active {
@@ -112,7 +111,7 @@
   align-items: center;
   padding-top: 50px;
   padding-bottom: 100px;
-   /* Optional: Set a specific height for the container */
+  /* Optional: Set a specific height for the container */
 }
 
 .card {
@@ -120,34 +119,24 @@
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 50%;
+  width: 60%;
 }
-.icon
-{
+.icon {
   margin-top: -3px;
 }
-.contact
-{
+.contact {
   padding-top: 21px;
 }
-#cont
-{
+#cont {
   padding-top: 35px;
 }
-.space
-{
+.space {
   padding-top: 30px;
 }
-.spacex
-{
+.spacex {
   padding-top: 50px;
 }
 
 /* Add any additional styling you need for the card or container */
 
-
 /* Add any additional styling you need for the card */
-
-
-
-
