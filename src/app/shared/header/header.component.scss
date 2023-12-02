@@ -1,27 +1,42 @@
-.img1
-{
-    width: 90px;
-    display: flex;
-    z-index: 4;
-    margin-top: -5px;
-    margin-left: 50px;
+.img1 {
+  width: 60px;
+  display: flex;
+  z-index: 4;
+  margin-top: -5px;
+  margin-left: 50px;
 }
-#ul1
-{
+#ul1 {
   margin-left: 450px;
 }
-#li1
-{
+#li1 {
   padding-right: 40px;
 }
-#li2
-{
+#li2 {
   padding-right: 40px;
 }
-.gk
-{
+.gk {
   padding-left: 20px;
   color: darkcyan;
   font-size: 30px;
 }
+.active-link {
+  color: red; /* Set the desired color for the active link */
+}
+/* your-component.styles.css */
 
+#bottone1 {
+  border: none;
+  font-family: inherit;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#bottone1:hover {
+  box-shadow: 7px 5px 56px -14px #d90000;
+}
+
+#bottone1:active {
+  transform: scale(0.97);
+  box-shadow: 7px 5px 56px -10px #d90000;
+}

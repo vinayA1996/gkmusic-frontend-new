@@ -26,7 +26,7 @@ export const songs: SONG[] = [
     images: ['image1', 'image2'],
     lyrics: 'Surveen Kaur',
     releaceDate: 'xx',
-    duration: 4.57,
+    duration: 4.42,
     directors: [{ name: 'Akshay K Agarwal' }],
     composers: [{ name: 'Amir Khan' }],
     singers: [{ name: 'Ankit Tiwari' }],

@@ -23,17 +23,34 @@
           style="--bs-scroll-height: 100px"
         >
           <li id="li1" class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a
+              id="bottone1"
+              class="nav-link"
+              [routerLink]="['/home']"
+              routerLinkActive="active-link"
+              >Home</a
+            >
           </li>
           <li id="li2" class="nav-item">
-            <a class="nav-link" (click)="routeToComponent('about')">About us</a>
+            <a
+              id="bottone1"
+              class="nav-link"
+              [routerLink]="['/about']"
+              routerLinkActive="active-link"
+              >About us</a
+            >
           </li>
           <li id="li3" class="nav-item">
-            <a class="nav-link" (click)="routeToComponent('contact')"
+            <a
+              id="bottone1"
+              class="nav-link"
+              [routerLink]="['/contact']"
+              routerLinkActive="active-link"
               >Contact us</a
             >
           </li>
         </ul>
+
         <form class="d-flex" role="search">
           <input
             class="form-control me-2"

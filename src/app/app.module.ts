@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
 import { CommonComponentsModule } from './common-components/common-components.module';
 import { AdminModule } from './admin/admin.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -14,6 +15,7 @@ import { AdminModule } from './admin/admin.module';
     HomeModule,
     CommonComponentsModule,
     AdminModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

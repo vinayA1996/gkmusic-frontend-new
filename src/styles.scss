@@ -1,6 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 body {
   overflow-x: hidden;
+  background-image: url("/assets/images/pexels-pixabay-164938.jpg");
+  background-size: cover; /* This makes the background image cover the entire container */
+  background-position: center; /* This centers the background image */
+  background-attachment: fixed;
 }
 ::-webkit-scrollbar {
   width: 8px;
@@ -18,3 +22,6 @@ body {
 a {
   text-decoration: none !important;
 }
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';

@@ -6,22 +6,6 @@
   </div>
 </section>
 <div class="title">
-  <h3>Featured Tracks</h3>
+  <h3>New Relased</h3>
 </div>
-<div class="song-card">
-  <div class="row my-5">
-    <div class="col mx-auto" *ngFor="let song of songs">
-      <div class="card" style="width: 18rem">
-        <img
-          [src]="song.img"
-          class="card-img-top"
-          alt="..."
-          style="width: 100%"
-        />
-        <div class="card-body">
-          <h5 class="card-title">{{ song.name }}</h5>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<div><app-song-layout1></app-song-layout1></div>
