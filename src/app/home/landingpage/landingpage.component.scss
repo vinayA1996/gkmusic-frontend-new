@@ -37,7 +37,7 @@ nav ul li {
 .hero {
   background-size: cover;
   color: #fff;
-  text-align: center;
+  // text-align: center;
   padding: 100px 0;
 }
 
@@ -85,4 +85,17 @@ img {
   text-align: center;
   justify-content: center;
   margin-left: 150px;
+}
+
+/* Add space above app-song-layout1 based on screen size */
+
+/* Change background color of section based on scroll percentage */
+section.hero {
+  transition: background-color 0.5s ease; /* Smooth transition effect */
+}
+section.hero {
+  margin-top: 500px; /* Adjust the margin-top as needed to create space */
+  /* Set the desired background color */
+  color: #fff; /* Set the text color to make it visible against the background */
+  padding: 20px; /* Optional: Add padding for better visual appearance */
 }

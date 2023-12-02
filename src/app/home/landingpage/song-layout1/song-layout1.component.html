@@ -1,0 +1,35 @@
+<div class="custom-background" appCustomBackground>
+  <div class="row">
+    <div class="col-md-6 d-flex justify-content-center align-items-center">
+      <!-- Ng Bootstrap Carousel -->
+      <ngb-carousel
+        #carousel
+        [showNavigationArrows]="false"
+        [showNavigationIndicators]="false"
+        [interval]="00"
+        [pauseOnHover]="pauseOnHover"
+        [pauseOnFocus]="pauseOnFocus"
+        (slide)="onSlide($event)"
+      >
+        <ng-template
+          ngbSlide
+          *ngFor="let img of images; track: img; let i = index"
+        >
+          <a target="_blank" rel="nofollow noopener noreferrer">
+            <div class="picsum-img-wrapper">
+              <img
+                [src]="img"
+                alt="My image {{ i + 1 }} description"
+                width="340px"
+              />
+            </div>
+          </a>
+        </ng-template>
+      </ngb-carousel>
+    </div>
+    <div class="col-md-6 songInfo">
+      <br />
+      <br />
+    </div>
+  </div>
+</div>

@@ -6,13 +6,20 @@ import { LandingpageComponent } from './landingpage/landingpage.component';
 import { CommonComponentsModule } from '../common-components/common-components.module';
 import { RouterModule } from '@angular/router';
 import { SongLayout1Component } from './landingpage/song-layout1/song-layout1.component';
+import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   declarations: [
     HomeLayoutComponent,
     LandingpageComponent,
     SongLayout1Component,
   ],
-  imports: [CommonModule, SharedModule, RouterModule, CommonComponentsModule],
+  imports: [
+    CommonModule,
+    SharedModule,
+    RouterModule,
+    CommonComponentsModule,
+    NgbCarouselModule,
+  ],
   exports: [HomeLayoutComponent],
 })
 export class HomeModule {}

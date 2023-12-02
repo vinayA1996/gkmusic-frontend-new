@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-landingpage',
@@ -17,4 +17,20 @@ export class LandingpageComponent {
       img: '/assets/images/music-event.jpg',
     },
   ];
+  constructor(private el: ElementRef) {}
+
+  @HostListener('window:scroll', ['$event'])
+  onScroll() {
+    const sectionHero = this.el.nativeElement.querySelector(
+      'section.hero'
+    ) as HTMLElement;
+
+    const scrollPercentage =
+      (window.scrollY /
+        (document.documentElement.scrollHeight - window.innerHeight)) *
+      100;
+    const backgroundColor = `rgba(0, 0, 0, ${scrollPercentage / 120})`;
+
+    sectionHero.style.backgroundColor = backgroundColor;
+  }
 }
