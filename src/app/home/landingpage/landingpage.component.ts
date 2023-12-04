@@ -1,4 +1,5 @@
-import { Component, ElementRef, HostListener } from '@angular/core';
+import { Component, ElementRef, HostListener, Renderer2 } from '@angular/core';
+import { SONG, songs } from 'src/app/domain/Song';
 
 @Component({
   selector: 'app-landingpage',
@@ -6,17 +7,7 @@ import { Component, ElementRef, HostListener } from '@angular/core';
   styleUrls: ['./landingpage.component.scss'],
 })
 export class LandingpageComponent {
-  songs: any[] = [
-    { name: 'track 1', img: 'assets/images/pexels-vishnu-r-nair-1105666.jpg' },
-    {
-      name: 'track 2',
-      img: '/assets/images/ecd5833d5140944fa0dbc62a940b6b4b.jpeg',
-    },
-    {
-      name: 'track 2',
-      img: '/assets/images/music-event.jpg',
-    },
-  ];
+  Song: SONG = songs[0];
   constructor(private el: ElementRef) {}
 
   @HostListener('window:scroll', ['$event'])

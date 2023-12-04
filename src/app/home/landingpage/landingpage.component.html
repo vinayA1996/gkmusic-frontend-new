@@ -3,14 +3,13 @@
     <div class="container" style="text-align: center">
       <h2>Welcome to GKMusic</h2>
       <p>Your source for amazing music production.</p>
-      <a href="#" class="btn">Explore Music</a>
-    </div>
-
-    <div style="margin-top: 400px">
-      <span class="text-center">
-        <!-- <h1>New Released</h1> -->
-      </span>
-      <app-song-layout1></app-song-layout1>
+      <a class="btn">Explore Music</a>
     </div>
   </div>
+  <div style="margin-top: 500px">
+    <span class="text-center">
+      <app-song-layout1 [Song]="Song"></app-song-layout1>
+    </span>
+  </div>
 </section>
+<div></div>

@@ -7,11 +7,13 @@ import { CommonComponentsModule } from '../common-components/common-components.m
 import { RouterModule } from '@angular/router';
 import { SongLayout1Component } from './landingpage/song-layout1/song-layout1.component';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+import { SongPageComponent } from './landingpage/song-page/song-page.component';
 @NgModule({
   declarations: [
     HomeLayoutComponent,
     LandingpageComponent,
     SongLayout1Component,
+    SongPageComponent,
   ],
   imports: [
     CommonModule,

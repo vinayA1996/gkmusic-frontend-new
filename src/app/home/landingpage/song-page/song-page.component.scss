@@ -1,0 +1,20 @@
+/* song-page.component.css */
+.page-container {
+  background: linear-gradient(#f8f9fa, #2c2c2c);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.back-button {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  text-decoration: none;
+  border: none !important;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.back-button i {
+  margin-right: 5px;
+}

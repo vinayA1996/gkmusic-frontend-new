@@ -5,6 +5,7 @@ import { LandingpageComponent } from './home/landingpage/landingpage.component';
 import { AboutUsComponent } from './common-components/about-us/about-us.component';
 import { ContactUsComponent } from './common-components/contact-us/contact-us.component';
 import { AdminLayoutComponent } from './admin/admin-layout/admin-layout.component';
+import { SongPageComponent } from './home/landingpage/song-page/song-page.component';
 
 const routes: Routes = [
   {
@@ -23,6 +24,10 @@ const routes: Routes = [
       {
         path: 'contact',
         component: ContactUsComponent,
+      },
+      {
+        path: 'song/:layoutId/:songId',
+        component: SongPageComponent,
       },
     ],
   },

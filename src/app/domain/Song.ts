@@ -12,9 +12,11 @@ export interface SONG {
   composers?: Person[];
   actors?: Person[];
   singers?: Person[];
+  background?: string;
+  rating?: string;
 }
 interface Person {
-  // Define properties for the Person type
+  name?: string;
 }
 
 enum Status {}
@@ -23,12 +25,14 @@ export const songs: SONG[] = [
   {
     ID: '1',
     name: 'Imaan Tu',
-    images: ['image1', 'image2'],
+    link: 'https://youtu.be/s5dHonH6E98?si=JZrZHlfAJsrgROy3',
+    images: ['/assets/images/Iman_tu.jpg', 'image2'],
     lyrics: 'Surveen Kaur',
     releaceDate: 'xx',
     duration: 4.42,
     directors: [{ name: 'Akshay K Agarwal' }],
     composers: [{ name: 'Amir Khan' }],
     singers: [{ name: 'Ankit Tiwari' }],
+    background: '/assets/images/bgofsong.jpg',
   },
 ];

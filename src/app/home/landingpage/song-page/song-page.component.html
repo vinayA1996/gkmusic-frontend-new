@@ -1,0 +1,72 @@
+<div class="page-container">
+  <button class="back-button" (click)="goBack()">
+    <i
+      class="fa-solid fa-chevron-left fa-beat-fade fa-2xl"
+      style="color: #832121"
+    ></i>
+  </button>
+  <br /><br />
+  <div class="row">
+    <div class="col-4"></div>
+    <div class="col-8">
+      <div class="card" style="width: 32rem">
+        <div class="row no-gutters">
+          <div class="col-md-6">
+            <img class="card-img" [src]="song.images[0]" alt="Card image cap" />
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <div class="title">
+                <h4 class="card-title" style="color: #a60020">
+                  {{ song.name | uppercase }}
+                </h4>
+              </div>
+              <div class="otherDetails">
+                <div>
+                  <p style="font-weight: 600">
+                    Starcast :
+                    <br />
+                    <span style="font-weight: 400">
+                      {{ song.composers[0].name }}</span
+                    >
+                  </p>
+                </div>
+                <div>
+                  <p style="font-weight: 600">
+                    Music Director :
+                    <br />
+                    <span style="font-weight: 400">
+                      {{ song.directors[0].name }}</span
+                    >
+                  </p>
+                </div>
+                <div>
+                  <p style="font-weight: 600">
+                    User Rating :
+                    <br />
+                    <span style="color: rgb(172, 25, 25)">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span
+                    ></span>
+                  </p>
+                </div>
+                <div class="icons">
+                  <p style="font-weight: 600">Play Now :</p>
+                  <a href="https://www.youtube.com/">
+                    <i
+                      class="fa-brands fa-youtube fa-fade fa-2xl"
+                      style="color: #ff0000"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,4 +1,7 @@
-<div class="container1">
+<div
+  class="container1"
+  [style.backgroundImage]="'url(' + backgroundImagePath + ')'"
+>
   <div class="row">
     <div>
       <div
@@ -8,16 +11,16 @@
           color: #e3c936;
         "
       >
-        <h4>NEW ALBUM OUT NOW</h4>
+        <h4>NEW SONG COMING SOON</h4>
       </div>
-      <div class="card" style="width: 18rem">
-        <img
-          class="card-img-top"
-          src="/assets/images/Iman_tu.jpg"
-          alt="Card image cap"
-        />
+      <div
+        class="card"
+        style="width: 18rem; cursor: pointer"
+        (click)="onClick()"
+      >
+        <img class="card-img-top" [src]="Song.images[0]" alt="Card image cap" />
         <div class="play">
-          <a href="#" class="btn btn-light">Play Now</a>
+          <a [href]="Song.link" class="btn btn-light">Play Now</a>
         </div>
       </div>
     </div>
