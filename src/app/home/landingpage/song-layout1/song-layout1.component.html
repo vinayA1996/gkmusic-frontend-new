@@ -20,7 +20,7 @@
       >
         <img class="card-img-top" [src]="Song.images[0]" alt="Card image cap" />
         <div class="play">
-          <a [href]="Song.link" class="btn btn-light">Play Now</a>
+          <a (click)="onClick()" class="btn btn-light">Play Now</a>
         </div>
       </div>
     </div>

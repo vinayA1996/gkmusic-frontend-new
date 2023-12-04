@@ -3,6 +3,7 @@
   background: linear-gradient(#f8f9fa, #2c2c2c);
   min-height: 100vh;
   padding: 20px;
+  overflow: hidden;
 }
 
 .back-button {
@@ -17,4 +18,17 @@
 
 .back-button i {
   margin-right: 5px;
+}
+/* Add this CSS to your stylesheet */
+
+.card-img {
+  transition: transform 0.8s ease;
+}
+
+.card-img:hover {
+  transform: scale(1.2);
+}
+.img-container {
+  overflow: hidden !important;
+  border-radius: 5px;
 }
