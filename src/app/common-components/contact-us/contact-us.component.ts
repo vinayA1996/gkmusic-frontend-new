@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
@@ -6,9 +6,18 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   templateUrl: './contact-us.component.html',
   styleUrls: ['./contact-us.component.scss']
 })
-export class ContactUsComponent {
+export class ContactUsComponent implements OnInit {
   contactForm: FormGroup ;
 
+  private scrollToTop(): void {
+    // Use window.scrollTo to scroll the entire window to the top
+    window.scrollTo(0, 0);
+  }
+ngOnInit(): void
+  {
+    this.scrollToTop();
+
+  }
   constructor(private fb: FormBuilder) {
     this.createContactForm();
   }
@@ -29,5 +38,6 @@ export class ContactUsComponent {
       console.log('Form submitted:', this.contactForm.value);
     }
   }
+
 }
 
