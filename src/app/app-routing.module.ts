@@ -26,6 +26,7 @@ const routes: Routes = [
         component: ContactUsComponent,
       },
       {
+        // Define a route parameter for layoutId and songId
         path: 'song/:layoutId/:songId',
         component: SongPageComponent,
       },
@@ -38,9 +39,11 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {
-    initialNavigation: 'enabledBlocking'
-})],
+  imports: [
+    RouterModule.forRoot(routes, {
+      initialNavigation: 'enabledBlocking',
+    }),
+  ],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

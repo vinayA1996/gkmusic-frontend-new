@@ -1,13 +1,3 @@
-.play {
-  position: absolute;
-  bottom: -16px;
-  left: 32%;
-}
-.title {
-  position: absolute;
-  right: 250px;
-}
-//--------------------
 .container1 {
   background-size: cover;
   background-position: center;
@@ -17,4 +7,24 @@
   align-items: center;
   margin-left: 20px;
   padding-right: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  .container1 {
+    padding-right: 20px;
+  }
+
+  .play {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    margin-top: 16px;
+  }
+
+  .title {
+    position: static;
+    text-align: center;
+    margin-top: 16px;
+  }
 }

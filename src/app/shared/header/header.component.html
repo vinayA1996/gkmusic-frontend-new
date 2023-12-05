@@ -1,66 +1,70 @@
-<div class="row">
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a routerLink="/home"
-        ><img class="img1" src="assets/images/GKMusic Logo.png" alt="loading"
-      /></a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarScroll"
-        aria-controls="navbarScroll"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarScroll">
-        <a class="gk" href="#">GKMusic</a>
-        <ul
-          id="ul1"
-          class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
-          style="--bs-scroll-height: 100px"
-        >
-          <li id="li1" class="nav-item">
-            <a
-              id="bottone1"
-              class="nav-link"
-              [routerLink]="['/home']"
-              routerLinkActive="active-link"
-              >Home</a
-            >
-          </li>
-          <li id="li2" class="nav-item">
-            <a
-              id="bottone1"
-              class="nav-link"
-              [routerLink]="['/about']"
-              routerLinkActive="active-link"
-              >About us</a
-            >
-          </li>
-          <li id="li3" class="nav-item">
-            <a
-              id="bottone1"
-              class="nav-link"
-              [routerLink]="['/contact']"
-              routerLinkActive="active-link"
-              >Contact us</a
-            >
-          </li>
-        </ul>
-
-        <form class="d-flex" role="search">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
+<div class="container-fluid">
+  <div class="row">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a routerLink="/home" class="navbar-brand">
+          <img
+            class="img1"
+            src="assets/images/GKMusic Logo.png"
+            alt="loading"
           />
-          <button class="btn btn-outline-dark" type="submit">Search</button>
-        </form>
+        </a>
+        <div class="gk navbar-brand" href="#">GKMusic</div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            id="ul1"
+            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll max-height-100"
+            style="--bs-scroll-height: 100px"
+          >
+            <li class="nav-item" id="li1">
+              <a
+                class="nav-link"
+                [routerLink]="['/home']"
+                routerLinkActive="active-link"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item" id="li2">
+              <a
+                class="nav-link"
+                [routerLink]="['/about']"
+                routerLinkActive="active-link"
+                >About us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                [routerLink]="['/contact']"
+                routerLinkActive="active-link"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+          </form>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </div>
 </div>

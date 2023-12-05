@@ -32,3 +32,8 @@
   overflow: hidden !important;
   border-radius: 5px;
 }
+@media screen and (max-width: 999px) {
+  .back-button {
+    display: none;
+  }
+}
