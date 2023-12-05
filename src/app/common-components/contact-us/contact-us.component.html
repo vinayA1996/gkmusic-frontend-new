@@ -61,7 +61,6 @@
                 width="16"
                 viewBox="0 0 512 512"
               >
-                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
                 <path
                   d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
                 />
@@ -88,24 +87,33 @@
       <div class="col-6">
         <div class="form-container">
           <h2>Get in Touch</h2>
-          <form class="form">
+          <form
+            class="form"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="fedc3018-8a07-4473-9271-982589aa086b"
+            />
             <div class="form-group">
-              <label for="email">Full Name </label>
-              <input type="text" id="email" name="email" required="" />
+              <label for="fullName">Full Name </label>
+              <input type="text" id="fullName" name="full Name" />
             </div>
             <div class="form-group">
-              <label for="email">Phone No </label>
-              <input type="text" id="email" name="email" required="" />
+              <label for="phone">Phone No </label>
+              <input type="text" id="phone" name="phone" />
             </div>
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="text" id="email" name="email" required="" />
+              <input type="text" id="email" name="email" />
             </div>
             <div class="form-group">
-              <label for="textarea">Message</label>
+              <label for="message">Message</label>
               <textarea
-                name="textarea"
-                id="textarea"
+                name="message"
+                id="message"
                 rows="10"
                 cols="50"
                 required=""
