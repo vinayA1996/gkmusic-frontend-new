@@ -44,12 +44,21 @@
                 >About us</a
               >
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id="li2">
               <a
                 class="nav-link"
                 [routerLink]="['/contact']"
                 routerLinkActive="active-link"
                 >Contact us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                routerLinkActive="active-link"
+                style="cursor: pointer"
+                (click)="onMusicLinkClick()"
+                >Music</a
               >
             </li>
           </ul>
