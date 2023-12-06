@@ -1,4 +1,17 @@
-/* Apply some basic styles to make the page responsive */
+:host {
+  animation: display 0.2s ease-in-out;
+}
+@keyframes display {
+  from {
+    transform: translateY(-10%);
+    opacity: 0.1;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 #div1 {
   margin-top: 200px;
   margin-bottom: 200px;
