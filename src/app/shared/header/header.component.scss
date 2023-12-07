@@ -47,3 +47,9 @@
     font-size: 20px;
   }
 }
+@media (max-width: 768px) {
+  /* Custom styles for smaller screens */
+  .navbar-nav-scroll {
+    max-height: none; /* Adjust as needed */
+  }
+}
