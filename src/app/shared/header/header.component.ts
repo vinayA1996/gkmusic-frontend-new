@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, Renderer2 } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +7,17 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  constructor(private router: Router) {}
+  constructor(private router: Router, private renderer: Renderer2) {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        const navbarToggler = document.getElementById('navbar-toggler');
+        if (navbarToggler && !navbarToggler.classList.contains('collapsed')) {
+          // If the navbar is not already collapsed, toggle it
+          navbarToggler.click();
+        }
+      }
+    });
+  }
 
   routeToComponent(component: string) {
     this.router.navigateByUrl(`/${component}`);
