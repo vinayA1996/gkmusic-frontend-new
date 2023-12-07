@@ -9,7 +9,7 @@
             alt="loading"
           />
         </a>
-        <div class="gk navbar-brand" href="#">GKMusic</div>
+        <a class="gk navbar-brand" href="/home">GKMusic</a>
         <button
           id="navbar-toggler"
           class="navbar-toggler"
@@ -64,15 +64,16 @@
             </li>
           </ul>
 
-          <form class="d-flex">
+          <div class="d-flex">
             <input
               class="form-control me-2"
               type="search"
               placeholder="Search"
               aria-label="Search"
+              [(ngModel)]="searchText"
             />
-            <button class="btn btn-outline-dark" type="submit">Search</button>
-          </form>
+            <button class="btn btn-outline-dark">Search</button>
+          </div>
         </div>
       </div>
     </nav>

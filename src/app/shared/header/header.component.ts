@@ -7,6 +7,7 @@ import { NavigationEnd, Router } from '@angular/router';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
+  searchText: string = '';
   constructor(private router: Router, private renderer: Renderer2) {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
@@ -34,5 +35,13 @@ export class HeaderComponent {
       top: scrollPosition,
       behavior: 'smooth',
     });
+  }
+  onSearch() {
+    console.log('Search Text:', this.searchText);
+    this.router.navigate(['/search'], {
+      queryParams: { searchText: this.searchText },
+    });
+
+    this.searchText = '';
   }
 }

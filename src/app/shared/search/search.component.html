@@ -1,0 +1,44 @@
+<div class="page-container container-fluid">
+  <div class="row back-container">
+    <div class="col-1 d-flex justify-content-end">
+      <div>
+        <span class="back-button" (click)="goBack()">
+          <i
+            class="fa-solid fa-chevron-left fa-beat-fade fa-2xl"
+            style="color: white"
+          ></i>
+        </span>
+      </div>
+    </div>
+    <div class="col-11" *ngIf="searchText">
+      <h4>Search Results For "{{ searchText }}"</h4>
+    </div>
+    <div class="col-11" *ngIf="!searchText">
+      <h4>Search Panel</h4>
+    </div>
+  </div>
+  <br /><br />
+
+  <div class="row">
+    <div class="container1">
+      <div class="row">
+        <div *ngFor="let song of songs">
+          <div
+            class="card"
+            style="width: 11rem; cursor: pointer"
+            (click)="onClick()"
+          >
+            <img
+              class="card-img-top"
+              [src]="song.images[0]"
+              alt="Card image cap"
+            />
+            <div class="play" style="display: contents">
+              <a (click)="onClick()" class="btn btn-light">Play Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

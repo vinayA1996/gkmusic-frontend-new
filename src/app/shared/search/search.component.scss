@@ -1,0 +1,62 @@
+:host {
+  animation: display 0.2s ease-in-out;
+}
+@keyframes display {
+  from {
+    transform: translateY(-10%);
+    opacity: 0.1;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.page-container {
+  background: linear-gradient(#f8f9fa, #2c2c2c);
+  min-height: 100vh;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.back-button {
+  text-decoration: none;
+  border: none !important;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.back-button i {
+  margin-right: 5px;
+}
+
+.back-container {
+  background-color: #ac191991;
+  align-items: center;
+  color: white;
+}
+
+.container1 {
+  height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+  .container1 {
+    padding-right: 20px;
+  }
+
+  .play {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    margin-top: 16px;
+    justify-content: center;
+  }
+
+  .title {
+    position: static;
+    text-align: center;
+    margin-top: 16px;
+  }
+}

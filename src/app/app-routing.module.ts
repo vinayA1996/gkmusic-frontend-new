@@ -6,6 +6,7 @@ import { AboutUsComponent } from './common-components/about-us/about-us.componen
 import { ContactUsComponent } from './common-components/contact-us/contact-us.component';
 import { AdminLayoutComponent } from './admin/admin-layout/admin-layout.component';
 import { SongPageComponent } from './home/landingpage/song-page/song-page.component';
+import { SearchComponent } from './shared/search/search.component';
 
 const routes: Routes = [
   {
@@ -29,6 +30,11 @@ const routes: Routes = [
         // Define a route parameter for layoutId and songId
         path: 'song/:layoutId/:songId',
         component: SongPageComponent,
+      },
+      {
+        // Define a route parameter for layoutId and songId
+        path: 'search',
+        component: SearchComponent,
       },
     ],
   },
