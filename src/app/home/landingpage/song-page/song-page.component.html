@@ -35,9 +35,13 @@
                   <p style="font-weight: 600">
                     Starcast :
                     <br />
-                    <span style="font-weight: 400">
-                      {{ song.composers[0].name }}</span
+                    <span
+                      style="font-weight: 400"
+                      *ngFor="let composer of song.composers; let last = last"
                     >
+                      {{ composer.name }}
+                      <br *ngIf="!last" />
+                    </span>
                   </p>
                 </div>
                 <div>

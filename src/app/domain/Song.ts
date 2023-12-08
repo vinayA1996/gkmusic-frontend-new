@@ -31,7 +31,10 @@ export const songs: SONG[] = [
     releaceDate: 'xx',
     duration: 4.42,
     directors: [{ name: 'Akshay K Agarwal' }],
-    composers: [{ name: 'Amir Khan' }],
+    composers: [
+      { name: 'Aditi Budhathoki' },
+      { name: 'Paras Bhushan Kalnawat' },
+    ],
     singers: [{ name: 'Ankit Tiwari' }],
     background: '/assets/images/bgofsong.jpg',
   },
