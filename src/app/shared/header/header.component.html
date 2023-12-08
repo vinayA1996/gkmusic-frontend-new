@@ -2,14 +2,14 @@
   <div class="row">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <a routerLink="/home" class="navbar-brand">
+        <a [routerLink]="['/home']" class="navbar-brand">
           <img
             class="img1"
             src="assets/images/GKMusic Logo.png"
             alt="loading"
           />
         </a>
-        <a class="gk navbar-brand" href="/home">GKMusic</a>
+        <a class="gk navbar-brand" [routerLink]="['/home']">GKMusic</a>
         <button
           id="navbar-toggler"
           class="navbar-toggler"
