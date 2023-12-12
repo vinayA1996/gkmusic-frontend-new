@@ -1,0 +1,6 @@
+/ (Home Page)
+/about (About Us Page)
+/contact (Contact Us Page)
+/song/:layoutId/:songId (Song Page)
+/search (Search Page)
+/admin (Admin Page)

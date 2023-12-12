@@ -1,6 +1,6 @@
 <div class="container-fluid">
   <div class="row">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
         <a [routerLink]="['/home']" class="navbar-brand">
           <img
@@ -9,7 +9,12 @@
             alt="loading"
           />
         </a>
-        <a class="gk navbar-brand" [routerLink]="['/home']">GKMusic</a>
+        <a
+          class="gk navbar-brand"
+          [routerLink]="['/home']"
+          style="color: #ff0033db; text-shadow: 0px 0px 2px #000000"
+          >GKMusic</a
+        >
         <button
           id="navbar-toggler"
           class="navbar-toggler"
@@ -72,7 +77,7 @@
               aria-label="Search"
               [(ngModel)]="searchText"
             />
-            <button class="btn btn-outline-dark">Search</button>
+            <button class="btn btn-outline-light">Search</button>
           </div>
         </div>
       </div>
