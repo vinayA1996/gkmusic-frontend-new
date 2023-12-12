@@ -19,11 +19,13 @@
           id="navbar-toggler"
           class="navbar-toggler"
           type="button"
+          [attr.aria-expanded]="isNavbarExpanded ? 'true' : 'false'"
           data-bs-toggle="collapse"
           data-bs-target="#navbarScroll"
           aria-controls="navbarScroll"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          style="background-color: white"
         >
           <span class="navbar-toggler-icon"></span>
         </button>

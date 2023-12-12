@@ -7,6 +7,7 @@ import { NavigationEnd, Router } from '@angular/router';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
+  isNavbarExpanded = false;
   searchText: string = '';
   constructor(private router: Router, private renderer: Renderer2) {
     this.router.events.subscribe((event) => {
